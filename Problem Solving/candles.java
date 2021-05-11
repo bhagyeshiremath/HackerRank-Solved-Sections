@@ -1,4 +1,4 @@
-public static int birthdayCakeCandles(List<Integer> candles) 
+public static int Candles(List<Integer> candles) 
 {
 int max = candles.get(0);
 int cnt = 0;
