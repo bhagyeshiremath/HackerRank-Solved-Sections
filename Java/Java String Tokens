@@ -1,0 +1,63 @@
+/*import java.io.*;
+import java.util.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        Scanner scan = new Scanner(System.in);
+        String s = scan.nextLine();
+        //s.split("[A-Za-z !,?._'@]+");
+        //String[] arr= s.split("[ \\n\\t!,?._'@]+");
+         s = s.trim();
+        //String[] arr = s.split("[ \\s\\n\\!,?._'@]+");
+        String[] arr = s.split("[!,?._@\\s]+ {0,}");
+        System.out.println(arr.length);
+        for (int i=0;i<arr.length;i++)
+          { 
+              System.out.println(arr[i]); 
+          }
+        scan.close();
+    }
+}*/
+
+/*import java.io.*;
+import java.util.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        Scanner scan = new Scanner(System.in);
+        String s = scan.nextLine();
+         s=s.trim();
+        String[] arr = s.split("[!,?'._@\\s]+");               
+        System.out.println(arr.length);
+        for (int i=0;i<arr.length;i++)
+          { 
+              System.out.println(arr[i]); 
+          }
+        scan.close();
+    }
+}*/
+
+////////////////////////////////////////////////////////////
+import java.io.*;
+import java.util.*;
+public class Solution {
+    public static void main(String[] args) {
+        Scanner scan = new Scanner(System.in);
+        String s = scan.nextLine();
+         s=s.trim();
+        if(s.length()==0)
+        {
+             System.out.println(0);
+             return;
+         }
+        String[] arr = s.split("[!,?'._@\\s]+");               
+        System.out.println(arr.length);
+        for (int i=0;i<arr.length;i++)
+          { 
+              System.out.println(arr[i]); 
+          }
+        scan.close();
+    }
+}
