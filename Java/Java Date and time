@@ -1,0 +1,10 @@
+ public static String findDay(int month, int day, int year)
+ {
+       //Scanner scn = new Scanner(System.in);
+        //int month = scn.nextInt();
+        //int day = scn.nextInt();
+        //int year = scn.nextInt();
+        LocalDate date = LocalDate.of(year , month , day);
+        //System.out.println(date.getDayOfWeek());
+        return date.getDayOfWeek().toString();
+ }
