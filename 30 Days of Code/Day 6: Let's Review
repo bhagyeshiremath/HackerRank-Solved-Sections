@@ -1,0 +1,24 @@
+ublic static void main(String[] args)
+{
+        Scanner scn = new Scanner (System.in);
+        int T = scn.nextInt();
+        scn.nextLine() ;
+        for (int i = 0 ; i < T ; i ++)
+        {
+            String mystring = scn.nextLine() ;
+            String Hacker = "";
+            String Rank = "";
+            for(int j = 0 ; j < mystring.length() ; j++)
+            {
+                if(j % 2 == 0)
+                {
+                     Hacker += mystring.charAt(j);
+                }
+                else 
+                {
+                    Rank += mystring.charAt(j);
+                }
+            }
+            System.out.println(Hacker  + " " +  Rank + " ");
+        }
+    }
