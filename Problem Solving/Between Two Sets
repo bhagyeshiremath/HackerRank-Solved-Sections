@@ -1,0 +1,35 @@
+public static int getTotalX(List<Integer> a, List<Integer> b) 
+    {
+       int count=0;
+        boolean flag;
+        boolean flag1;
+        for(int x=1 ; x<=100 ; x++)
+        {
+            flag=true;
+            for(int k:a)
+            {
+                   if(x%k!=0)
+                   {
+                        flag=false;
+                        break;
+                   }
+            }
+            if(flag==true)
+            {
+                flag1=true;
+                for(int j:b)
+                {
+                    if(j%x!=0)
+                    {
+                        flag1=false;
+                        break;
+                    }
+                        
+                }
+                if(flag1==true)
+                    count++;
+            }
+        }
+        return count; 
+    }
+        
