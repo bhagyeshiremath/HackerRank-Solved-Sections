@@ -1,1 +1,1 @@
-# HackerRank-Solved-Sections 
+# HackerRank-Solved-Sections.
