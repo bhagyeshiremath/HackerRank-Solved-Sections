@@ -1,4 +1,4 @@
-static int solveMeFirst(int a, int b)
+pubic static int solveMeFirst(int a, int b)
 {
           return a + b;
 }
