@@ -1,0 +1,25 @@
+public static int birthday(List<Integer> s, int d, int m) 
+    {
+        int count = 0 ;
+        for(int i = 0 ; i <= s.size() - m ; i++)
+        {
+            int sum = 0 ;
+            if(s.get(i)==d && m==1)
+            {
+                count ++;
+            }
+            else
+            {
+                for(int j = i ; j < m + i ; j++)
+                {
+                    sum = sum + s.get(j);
+                }
+               
+                if(sum == d)
+                {
+                count ++ ;
+                } 
+            }   
+        }
+        return count ;
+    }
