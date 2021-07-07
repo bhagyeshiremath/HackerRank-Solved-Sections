@@ -1,0 +1,17 @@
+int main() 
+{
+    char c;
+    char ch[100];
+    char chh[100];
+    
+    scanf("%c\n", &c);
+    printf("%c\n",c);
+    
+    scanf("%s\n",&ch);
+    printf("%s\n",ch);
+    
+    scanf("%[^\n]%*c",&chh);
+    printf("%s\n", chh);
+      
+    return 0;
+}
