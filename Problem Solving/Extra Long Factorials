@@ -1,0 +1,9 @@
+public static void extraLongFactorials(int n) 
+{
+    BigInteger b = new BigInteger("1");
+    for(int i = 1 ; i <= n ; i++)
+    {
+        b = b.multiply(BigInteger.valueOf(i));
+    }
+    System.out.println(b);
+}
