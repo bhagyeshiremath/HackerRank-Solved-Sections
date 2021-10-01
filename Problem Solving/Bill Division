@@ -1,0 +1,20 @@
+public static void bonAppetit(List<Integer> bill, int k, int b) 
+    {
+        bill.set(k , 0);//whatever the value of k will be 0
+        int sum = 0;
+        for(int i : bill)
+        {
+            sum = sum + i;
+        }
+        sum = sum / 2;
+        //System.out.println("to check sum :- " + sum);
+        if(sum == b)
+        {
+            System.out.println("Bon Appetit");
+        }
+        else
+        {
+            b = b - sum;
+            System.out.println(b);
+        }
+    }
