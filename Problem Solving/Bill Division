@@ -1,6 +1,6 @@
 public static void bonAppetit(List<Integer> bill, int k, int b) 
     {
-        bill.set(k , 0);//whatever the value of k will be 0
+        bill.set(k , 0);//whatever the value of k , I have set to 0 because anna haven't ate it .
         int sum = 0;
         for(int i : bill)
         {
