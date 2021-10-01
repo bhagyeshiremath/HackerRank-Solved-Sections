@@ -1,0 +1,28 @@
+public static String dayOfProgrammer(int year) {
+    int[] months = new int[]{31,28,31,30,31,30,31,31};
+        int day = 256;
+        int difference = 0;
+        int sum = 0;
+        if(year == 1918)
+        {
+            return "26.09."+Integer.toString(year);
+        }
+        else if (year <= 1917)
+        {
+            if(year % 4 == 0)
+            {
+                months[1] = 29;
+            }
+        }
+        else if (((year % 4 == 0) && (year % 100 != 0)) || (year % 400 == 0))
+        {
+            months[1] = 29;
+        }
+
+        for(int i : months)
+        {
+            sum = sum + i;
+            difference = day - sum;
+        }
+        return difference+".09."+Integer.toString(year);
+    }
