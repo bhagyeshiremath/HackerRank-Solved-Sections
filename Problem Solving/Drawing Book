@@ -1,0 +1,6 @@
+public static int pageCount(int n, int p) 
+    {
+        int front = p / 2;
+        int end = n / 2;
+        return Math.min(front , (end - front));
+    }
