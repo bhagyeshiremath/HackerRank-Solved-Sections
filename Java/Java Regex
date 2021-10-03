@@ -1,0 +1,9 @@
+class MyRegex
+{
+    /* [01]?\\d{1,2} --> to generating nos from 0 - 199
+     * 2[0-4]\\d --> to generating nos from 200 - 249
+     * 25[0-5] --> to generating nos from 250 - 255
+     */
+    String numbs = "([01]?\\d{1,2}|2[0-4]\\d|25[0-5])";
+    String pattern = numbs+"."+numbs+"."+numbs+"."+numbs;
+}
