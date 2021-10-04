@@ -1,0 +1,23 @@
+public static int beautifulDays(int i, int j, int k) 
+    {
+    // Write your code here
+        int count = 0;
+        while(i <= j)
+        {
+            int x = i;
+            int rev = 0;
+            while(x > 0)
+            {
+                rev = rev * 10;
+                rev = rev + (x % 10);
+                x = x / 10;
+            }
+            int sum = rev - i;
+            if(sum % k == 0)
+            {
+                count++;
+            }
+            i++;
+        }
+        return count;
+    }
