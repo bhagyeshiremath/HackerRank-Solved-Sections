@@ -1,0 +1,17 @@
+public static int utopianTree(int n) 
+    {
+        // Write your code here
+        int t = 1;
+        for(int i = 1 ; i <= n ; i++)
+        {
+            if(i % 2 != 0)
+            {
+                t = t * 2;
+            }
+            else
+            {
+                t++;
+            }
+        }
+        return t;
+    }
