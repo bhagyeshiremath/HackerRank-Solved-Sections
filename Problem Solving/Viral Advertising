@@ -1,0 +1,16 @@
+public static int viralAdvertising(int n) 
+    {
+        // Write your code here
+        int liked = 0;
+        int shared = 5;
+        int total = 0;
+        int days = 1;
+        while(days <= n)
+        {
+            liked = shared / 2;
+            total = total + liked;
+            shared = liked * 3;
+            days++;
+        }
+        return total;
+    }
