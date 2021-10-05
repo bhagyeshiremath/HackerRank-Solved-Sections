@@ -1,0 +1,14 @@
+public static int saveThePrisoner(int n, int m, int s) 
+    {
+        // Write your code here
+        int sum = m % n;
+        if((sum + s - 1) % n == 0)
+        {
+            return n;
+        }
+        else
+        {
+           return (sum + s - 1) % n; 
+        }
+
+    }
