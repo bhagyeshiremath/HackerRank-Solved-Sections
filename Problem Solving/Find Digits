@@ -1,0 +1,16 @@
+public static int findDigits(int n) 
+    {
+        // Write your code here
+        int count = 0;
+        int result = n;
+        while(n != 0)
+        {
+            int temp = n % 10;
+            if((temp != 0) && (result % temp == 0))
+            {
+                count++;
+            }
+            n = n / 10;
+        }
+        return count;
+    }
