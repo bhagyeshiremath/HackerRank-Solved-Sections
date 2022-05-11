@@ -1,0 +1,25 @@
+public static int minimumDistances(List<Integer> a) 
+    {
+    // Write your code here
+     int sum = 0 ;
+        int min = Integer.MAX_VALUE;
+        for (int i = 0; i < a.size(); i++)
+        {
+            for(int j =  i + 1; j < a.size(); j++)
+            {
+                if(a.get(i).equals(a.get(j)))
+                {
+                    sum = j - i;
+                    if(sum < min)
+                    {
+                        min = sum ;
+                    }
+                }
+            }
+        }
+        if(min == Integer.MAX_VALUE)
+        {
+            return -1;
+        }
+        return min;
+    }
